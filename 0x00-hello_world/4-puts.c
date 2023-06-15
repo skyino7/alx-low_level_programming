@@ -1,10 +1,7 @@
 #include <stdio.h>
-
 /**
- * main function
+ * main - function
  *
- *Prints Progrmming is like building a multilingual puzzle
- *using puts
  *
  * Return: 0 when successful
  */
