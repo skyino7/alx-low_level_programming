@@ -5,7 +5,7 @@
  *
  * description: program that prints size of types
  *
- * return: always 0 when successful
+ * Return: always 0 when successful
  */
 int main(void)
 {

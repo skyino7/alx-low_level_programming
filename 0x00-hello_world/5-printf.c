@@ -4,7 +4,7 @@
  *
  * description: Prints exactly - with proper grammar, but the outcome
  *
- * return: Always 0 when (success)
+ * Return: Always 0 when (success)
  */
 int main(void)
 /*main function*/
