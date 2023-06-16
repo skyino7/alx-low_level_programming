@@ -1,9 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - function
- *
- * description - Write a program that prints all possible combinations
+ * main - Write a program that prints all possible combinations
  * of two two-digit numbers. The numbers should range from 0 to 99
  *
  * Return: 0 when successful
@@ -27,8 +25,8 @@ int main(void)
 			putchar(' ');
 			putchar(tens2 + '0');
 			putchar(ones2 + '0');
-			
-			if (num1 == 98 && num2 ==99)
+
+			if (num1 == 98 && num2 == 99)
 			break;
 			putchar(',');
 			putchar(' ');
