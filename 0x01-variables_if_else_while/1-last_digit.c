@@ -22,8 +22,8 @@ int main(void)
 
 	d = n % 10;
 
-	//printf("random number %d\n", n);
-	//printf("digits %d\n", d);
+	/*printf("random number %d\n", n);*/
+	/*printf("digits %d\n", d);*/
 
 	if (d > 5)
 	{
