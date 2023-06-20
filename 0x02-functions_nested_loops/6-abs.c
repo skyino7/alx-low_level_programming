@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
@@ -10,7 +11,7 @@
 
 int _abs(int b)
 {
-	if (b > 0)
+	if (b < 0)
 	{
 		return (b * (-1));
 	}
