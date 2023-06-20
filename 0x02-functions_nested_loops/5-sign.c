@@ -3,7 +3,7 @@
 /**
  * print_sign - function
  *
- * @n - compares values
+ * @n: compares values
  *
  * Return: 0 when successful and 1 when it fails
  */
