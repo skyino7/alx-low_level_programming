@@ -2,7 +2,7 @@
 /**
  * _islower - description
  *
- * c: compared value
+ * @c: compared value
  *
  * Return: 0 when successful
  */
