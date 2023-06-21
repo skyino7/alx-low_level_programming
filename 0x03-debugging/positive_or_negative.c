@@ -1,27 +1,21 @@
-#include <stdlib.h>
-#include <stdio.h>
-#include <time.h>
+#include "main.h"
 
 /**
- * main - Function
+ * positive_or_negative - Function
  *
- * Description - Prints Positive or Negative
+ * @i: check number
  *
  * Return: 0 when successful
  */
 
-int main(void)
+void positive_or_negative(int i)
 {
-	int n;
 
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-
-	if (n > 0)
+	if (i > 0)
 	{
 		printf("%d is positive\n", n);
 	}
-	else if (n < 0)
+	else if (i < 0)
 	{
 		printf("%d is negative\n", n);
 	}
