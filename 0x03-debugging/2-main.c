@@ -1,4 +1,4 @@
-nclude <stdio.h>
+#include <stdio.h>
 #include "main.h"
 
 /**
@@ -20,5 +20,5 @@ int main(void)
 
 	printf("%d is the largest number\n", largest);
 
-		return (0);
+	return (0);
 }
