@@ -33,5 +33,6 @@ int main(void)
 		nx = fs + sn;
 		cnt++;
 	}
+	printf("\n");
 	return (0);
 }
