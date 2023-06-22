@@ -31,7 +31,7 @@ int main(void)
 		sn = nx;
 
 		nx = fs + sn;
-		cnt++
+		cnt++;
 	}
 	return (0);
 }
