@@ -3,7 +3,7 @@
 /**
  * _isdigit - function
  *
- * @c - checks number
+ * @c: checks number
  *
  * Return: 0 when sucessfull and 1 when failed
  */
