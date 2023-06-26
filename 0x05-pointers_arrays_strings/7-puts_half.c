@@ -4,7 +4,7 @@
 /**
  * puts_half - function
  *
- * @str - prints half thw words
+ * @str: prints half the words
  *
  */
 
