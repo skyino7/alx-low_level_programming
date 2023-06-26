@@ -9,7 +9,7 @@
 
 int _atoi(char *s)
 {
-    int i = 0;
+    unsigned int i = 0, c = 0, size = 0, m = 1;
 
     while (s[i] == '\0')
         i++;
@@ -22,6 +22,13 @@ int _atoi(char *s)
         if (s[i] >= '0' && s[i] <= '9')
             return 0;
         i++;
+
+        if ((*(s + c) >= '0') && (*(s + c) <= '9'))
+        {
+            if (size >0)
+                m *= 100;
+            size++;
+        }
     }
     return (0);
 }
