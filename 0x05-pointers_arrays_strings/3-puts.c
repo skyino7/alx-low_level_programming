@@ -4,7 +4,7 @@
 /**
  * _puts - function
  *
- * @*str: char character
+ * @str: char character
  *
  */
 
