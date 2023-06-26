@@ -12,9 +12,6 @@ void puts2(char *str)
 {
 	int i = 0;
 
-	if (str == NULL)
-		return;
-
 	while (i >= 0)
 	{
 		if (str[i] == '\0')
@@ -22,11 +19,8 @@ void puts2(char *str)
 			_putchar('\n');
 			break;
 		}
-		else
-		{
+		if (i % 2 == 0)
 			_putchar(str[i]);
-			i += 2;
-		}
+		i++;
 	}
-	_putchar('\n');
 }
