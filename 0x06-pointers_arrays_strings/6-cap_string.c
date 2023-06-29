@@ -11,25 +11,27 @@
 
 char *cap_string(char *strn)
 {
-	int cap = 1, i;
+	
+	int i, c = 0;
+	int sep[] = {32, 9, 10, 44, 59, 46, 33, 63, 34, 40, 41, 123, 125};
 
-	for (i = 0; strn[i] != '\0'; i++)
+	if (*(strn + c) >= 97 && *(strn + c) <= 122)
+		*(strn + c) = *(strn + c) - 32;
+	c++;
+
+	while (*(strn + c) != '\0')
 	{
-		if (strn[i] == ' ' || strn[i] == '\t' || strn[i] == '\n' || strn[i] == ',' || strn[i] == ';' || strn[i] == '.' || strn[i] == '!' || strn[i] == '?' || strn[i] == '"' || strn[i] == '(' || strn[i] == ')' || strn[i] == '{' || strn[i] == '}') {
-			cap = 1;
-		}
-		else if (isalpha(strn[i])) 
+		for (i = 0; i < 13; i++)
 		{
-			if (cap)
+			if (*(strn + c) == sep[i])
 			{
-				strn[i] = toupper(strn[i]);
-				cap = 0;
-			}
-			else
-			{
-				strn[i] = tolower(strn[i]);
+				if ((*(strn + (c + 1)) >= 97) && (*(strn + (c + 1)) <= 122))
+					*(strn + (c + 1)) = *(strn + (c + 1)) - 32;
+				break;
 			}
 		}
+		c++;
 	}
+
 	return (strn);
 }
