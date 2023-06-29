@@ -6,12 +6,12 @@
  *
  * @strn: string
  *
- * Return: str 
+ * Return: the pointer
  */
 
 char *cap_string(char *strn)
 {
-	
+
 	int i, c = 0;
 	int sep[] = {32, 9, 10, 44, 59, 46, 33, 63, 34, 40, 41, 123, 125};
 
