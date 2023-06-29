@@ -7,6 +7,7 @@
  * @dest: pointer
  * @src: pointer
  *
+ * Return: pointer dest
  */
 
 char *_strcat(char *dest, char *src)
@@ -15,10 +16,15 @@ char *_strcat(char *dest, char *src)
 
 	len = strlen(dest);
 
+	while (len != '\0')
+	{
+		len++;
+	}
+
 	for (i = 0; i < n && src[i] != '\0'; i++)
 		dest[len + i] = src[i];
 	dest[len + i] = '\0';
 
 	return (dest);
-	
+
 }
