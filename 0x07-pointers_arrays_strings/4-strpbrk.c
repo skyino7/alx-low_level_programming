@@ -7,6 +7,8 @@
  * @s: pointer
  * @accept: pointer
  *
+ * Return: NULL
+ *
  */
 
 char *_strpbrk(char *s, char *accept)
