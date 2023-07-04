@@ -1,7 +1,13 @@
 #include "main.h"
-#include <stddef.h>
-#include <string.h>
-#include <stdbool.h>
+
+/**
+ * _strspn - function
+ *
+ * @s: pointer
+ * @accept: pointer
+ *
+ * Return: l;
+ */
 
 unsigned int _strspn(char *s, char *accept)
 {
