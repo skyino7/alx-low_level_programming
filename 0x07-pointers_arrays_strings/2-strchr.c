@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 
 /**
  * _strchr - function
@@ -6,17 +7,23 @@
  * @s: pointer
  * @c: pointer
  *
- * Return: 0
+ * Return: NULL
  *
  */
 
 char *_strchr(char *s, char c)
 {
-		while (*s != '\0')
+		while (*s)
 		{
-			if (*s == c)
+			if (*s != c)
+				s++;
+			else
 				return (s);
-			s++;
 		}
-		return (0);
+
+		if (c == '\0')
+			return (s);
+
+
+		return (NULL);
 }
