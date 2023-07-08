@@ -10,28 +10,31 @@
 
 int main(int argc, char *argv[])
 {
-	int i, j = 0, k;
-	int array[5] = {25, 10, 5, 2, 1};
+	int a, n = 0, i, t;
+	int c[5] = {25, 10, 5, 2, 1};
 
 	if (argc != 2)
 	{
-		printf("Error\n");
+		puts("Error");
 		return (1);
 	}
-	k = atoi(argv[1]);
-	if (k < 0)
+	a = atoi(argv[1]);
+	if (a <= 0)
 	{
-		printf("\n");
-		return (0);
+		puts("0");
+		return (1);
 	}
-	for (i = 0; i < 5; i++)
+	else
 	{
-		while (k >= array[i])
+		for (i = 0; i < 5; i++)
 		{
-			k -= array[i];
-			k++;
+			t = a / c[i];
+			a -= t * c[i];
+			n += t;
+			if (a == 0)
+				break;
 		}
 	}
-	printf("%d\n", j);
+	printf("%d\n", n);
 	return (0);
 }
