@@ -1,9 +1,19 @@
 #include "main.h"
 #include <stdlib.h>
 
+/**
+ * create_array - function
+ *
+ * @size: - size
+ * @c: character
+ *
+ * Return: arr;
+ */
+
 char *create_array(unsigned int size, char c)
 {
-	unsigned int i; char *arr;
+	unsigned int i;
+	char *arr;
 
 	if (size == 0)
 	{
@@ -14,7 +24,7 @@ char *create_array(unsigned int size, char c)
 
 	if (size == 0)
 	{
-		return NULL;
+		return (NULL);
 	}
 	else
 	{
@@ -23,6 +33,6 @@ char *create_array(unsigned int size, char c)
 			arr[i] = c;
 		}
 	}
-	
+
 	return (arr);
 }
