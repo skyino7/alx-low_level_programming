@@ -2,6 +2,15 @@
 #include <stdlib.h>
 #include <string.h>
 
+/**
+ * _calloc - allocates memory for an array
+ *
+ * @nmemb: elements array
+ * @size: size of elements
+ *
+ * Return: ptr
+ */
+
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	void *ptr;
@@ -16,5 +25,5 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		memset(ptr, 0, nmemb * size);
 	}
 
-	return ptr;
+	return (ptr);
 }
