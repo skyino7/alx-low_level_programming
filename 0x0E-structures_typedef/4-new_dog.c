@@ -39,8 +39,6 @@ char *_strcpy(char *dest, char *src)
 		i++;
 	}
 
-	dest[i] = '\0';
-
 	return (dest);
 }
 
@@ -76,10 +74,12 @@ dog_t *new_dog(char *name, float age, char *owner)
 	}
 
 	new_dog->owner = malloc(owner_leng + 1);
+
 	if (new_dog->owner == NULL)
 	{
 		return (NULL);
 	}
+
 	_strcpy(new_dog->name, name);
 	new_dog->age = age;
 	_strcpy(new_dog->owner, owner);
