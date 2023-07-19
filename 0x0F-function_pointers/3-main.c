@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(98);
 	}
-	
+
 	if (argv[2][1])
 	{
 		printf("Error\n");
@@ -36,7 +36,7 @@ int main(int argc, char *argv[])
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[3]);
 
-	printf("%d\n", operate(num1,num2));
+	printf("%d\n", operate(num1, num2));
 
 	return (0);
 }
