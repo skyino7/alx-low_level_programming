@@ -1,6 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/**
+ * main - function
+ * @argc: argument counter
+ * @argv: argument vector
+ * Return: 0 when successful;
+ */
+
 int main(int argc, char *argv[])
 {
 	int num_bytes, i;
@@ -19,12 +26,13 @@ int main(int argc, char *argv[])
 		exit(2);
 	}
 
-	void *main_addr = &main;
-	unsigned char *opcodes = (unsigned char *)main_addr;
+	unsigned char *main_addr;
+
+	main_addr = (unsigned char *)main;
 
 	for (i = 0; i < num_bytes; i++)
 	{
-		printf("%02x ", opcodes[i]);
+		printf("0x%02x ", main_addr[i]);
 	}
 
 	printf("\n");
