@@ -4,6 +4,7 @@
 /**
  * print_all - prints function
  * @format: list of arguments
+ * Return: format
  */
 
 void print_all(const char * const format, ...)
@@ -42,8 +43,8 @@ void print_all(const char * const format, ...)
 					printf("%s", str);
 				break;
 			default:
-				i++;
-				continue;}
+					i++;
+					continue;}
 		if (format[i + 1] != '\0')
 		{
 			printf(", ");
