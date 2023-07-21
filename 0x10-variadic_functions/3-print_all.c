@@ -1,15 +1,12 @@
 #include "variadic_functions.h"
 #include <stdio.h>
-
 /**
  * print_all - prints function
  * @format: list of arguments
  * Return: format
  */
-
 void print_all(const char * const format, ...)
 {
-	
 	va_list list;
 	unsigned int i = 0;
 	char *str;
@@ -18,7 +15,6 @@ void print_all(const char * const format, ...)
 	float f;
 
 	va_start(list, format);
-
 	while (format && format[i])
 	{
 		switch (format[i])
@@ -44,15 +40,11 @@ void print_all(const char * const format, ...)
 				break;
 			default:
 					i++;
-					continue;}
+					continue; }
 		if (format[i + 1] != '\0')
-		{
 			printf(", ");
-		}
 		i++;
 	}
-
 	va_end(list);
 	printf("\n");
-
 }
