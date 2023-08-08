@@ -59,11 +59,11 @@ int main(int argc, char *argv[])
 		print_error(98, "Error: Can't read from file %s\n", file_from);
 
 	if (close(fd_from) == -1)
-		print_error(2, "Error: Can't close fd %d\n", 0);
+		print_error(2, "Error: Can't close fd %d\n", argv[1]);
 
 	if (close(fd_to) == -1)
 	{
-		print_error(2, "Error: Can't close fd %d\n", 0);
+		print_error(2, "Error: Can't close fd %d\n", argv[2]);
 		exit(100);
 	}
 	return (0);
