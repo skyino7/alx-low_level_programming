@@ -1,4 +1,5 @@
 #include "lists.h"
+
 /**
  * dlistint_len - function
  * @h: node
@@ -11,8 +12,8 @@ size_t dlistint_len(const dlistint_t *h)
 
 	while (h)
 	{
-		h = h->next;
 		nodes++;
+		h = h->next;
 	}
 
 	return (nodes);
