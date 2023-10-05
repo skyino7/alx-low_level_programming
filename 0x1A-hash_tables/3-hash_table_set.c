@@ -48,7 +48,7 @@ new->value = strdup(value);
 if (new->value == NULL)
 {
 free(new->key);
-free(new->value);
+/* free(new->value); */
 free(new);
 return (0);
 }
