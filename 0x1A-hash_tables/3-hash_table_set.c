@@ -27,7 +27,7 @@ if (strcmp(curr->key, key) == 0)
 free(curr->value);
 curr->value = strdup(value);
 if (curr->next == NULL)
-    return (0);
+return (0);
 
 return (1);
 }
@@ -48,6 +48,7 @@ new->value = strdup(value);
 if (new->value == NULL)
 {
 free(new->key);
+free(new->value);
 free(new);
 return (0);
 }
