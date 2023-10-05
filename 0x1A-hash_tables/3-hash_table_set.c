@@ -29,7 +29,7 @@ curr->value = strdup(value);
 if (curr->next == NULL)
 return (0);
 
-/* return (1); */
+return (1);
 }
 curr = curr->next;
 }
