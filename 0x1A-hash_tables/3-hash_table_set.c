@@ -28,6 +28,8 @@ free(curr->value);
 curr->value = strdup(value);
 if (curr->next == NULL)
 return (0);
+
+return (1);
 }
 curr = curr->next;
 }
@@ -39,13 +41,14 @@ return (0);
 
 new->key = strdup(key);
 if (new->key == NULL)
+free(new->key);
 return (0);
 
 new->value = strdup(value);
 if (new->value == NULL)
 {
 free(new->key);
-free(new->value);
+/* free(new->value); */
 free(new);
 return (0);
 }
