@@ -27,28 +27,27 @@ if (strcmp(curr->key, key) == 0)
 free(curr->value);
 curr->value = strdup(value);
 if (curr->next == NULL)
-return (0);
+    return (0);
 
 return (1);
 }
 curr = curr->next;
 }
 
-new = (hash_node_t *)malloc(sizeof(hash_node_t));
+new = malloc(sizeof(hash_node_t));
 
 if (new == NULL)
 return (0);
 
 new->key = strdup(key);
 if (new->key == NULL)
-free(new->key);
+free(new);
 return (0);
 
 new->value = strdup(value);
 if (new->value == NULL)
 {
 free(new->key);
-/* free(new->value); */
 free(new);
 return (0);
 }
