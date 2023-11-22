@@ -7,9 +7,6 @@ CFLAGS = -Wall -Werror -Wextra -pedantic
 all: $(OBJ) m.h
 	$(CC) $(OBJ) -o $(NAME)
 
-%.o: %.c
-	$(CC) $(CFLAGS) -c $< -o $@
-
 clean:
 	$(RM) *~ $(NAME)
 
