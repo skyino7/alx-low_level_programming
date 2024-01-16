@@ -30,12 +30,14 @@ int advanced_binary(int *array, size_t size, int value)
 				printf("\n");
 		}
 		mid = (low + high) / 2;
-		if (array[mid] == value && array[mid - 1] != value)
-			return (mid);
-		else if (array[mid] < value)
-			low = mid + 1;
-		else
-			high = mid;
+        if (array[mid] < value)
+            low = mid + 1;
+        else if (array[mid] > value)
+            high = mid;
+        else if (mid == 0 || array[mid - 1] != value)
+            return (mid);
+        else
+            high = mid;
 	}
 	return (-1);
 }
